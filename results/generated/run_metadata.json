@@ -1,0 +1,5 @@
+{
+  "mode": "quick_smoke_test",
+  "reportable_as_paper_results": false,
+  "command": "python reproduce_all.py --quick"
+}

@@ -1,0 +1,3 @@
+smoothing: 0.03
+profile_likelihood_source: benchmark.yaml
+response_policy_source: benchmark.yaml

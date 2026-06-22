@@ -1,0 +1,5 @@
+model,k0,k1,k2,k3
+Softmax Utility AI,0.640,0.505,0.373,0.342
+Stochastic BT,0.614,0.502,0.358,0.315
+MarkovBelief,0.468,0.380,0.336,0.339
+QLBS,0.409,0.347,0.385,0.411

@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+.vscode/
+.venv/
+venv/
+tmp/
+logs/*.csv
+*.egg-info/

@@ -1,0 +1,4 @@
+gamma: 0.75
+memory_decay: 0.08
+rerandomize_every: null
+anchor_probability: 0.0

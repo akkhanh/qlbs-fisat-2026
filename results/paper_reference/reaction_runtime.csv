@@ -1,0 +1,8 @@
+model,adaptation_shift,reaction_match,decision_time_ms
+FSM,0.472,1.000,0.001
+Behavior Tree,0.511,1.000,0.001
+Stochastic BT,0.573,0.913,0.002
+MarkovBelief,0.569,0.850,0.010
+Utility AI,0.511,1.000,0.003
+Softmax Utility AI,0.580,0.797,0.004
+QLBS,0.564,0.593,0.014

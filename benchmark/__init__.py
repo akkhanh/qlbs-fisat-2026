@@ -1,0 +1,1 @@
+"""Reproducible stealth-game benchmark."""

@@ -1,0 +1,7 @@
+action,Patrol,Investigate,Attack,Flee,Trust,Ignore
+Patrol,0.75,0,0,0,0,0
+Investigate,0.18,1.55,0,0,0,0
+Attack,0,0,1.45,0,0.18,0.12
+Flee,0,0,0,0.92,0,0
+Trust,0,0,0,0,0.45,0
+Ignore,0,0,0,0,0,0.70
