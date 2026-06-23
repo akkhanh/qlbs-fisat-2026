@@ -10,6 +10,9 @@ obsolete drafts. Values transcribed from the manuscript are kept separately in
 `results/generated/`. This prevents archived paper values from being mistaken for
 newly reproduced measurements.
 
+`human_study_protocol.md` is a proposed, not-yet-conducted protocol. It contains
+no fabricated participant data and does not substitute for ethics approval.
+
 ## Repository layout
 
 ```text
@@ -40,7 +43,8 @@ python -m pip install -r requirements.txt
 ## Reproduce everything
 
 The full pipeline runs the benchmark, independent-seed n-gram evaluation, QLBS
-variant sweep, context-persistence analysis, learned adversary, and figures:
+variant sweep, context-persistence analysis, scenario/matrix generalization,
+the dependency-light MLP learned adversary, and figure generation:
 
 ```bash
 python reproduce_all.py
@@ -62,6 +66,7 @@ python scripts/run_benchmark.py
 python scripts/run_ngram_multiseed.py
 python scripts/run_qlbs_variants.py
 python scripts/run_mixing_time.py
+python scripts/run_generalization_matrix_search.py
 python scripts/qlbs_learned_adversary.py
 python scripts/generate_figures.py
 ```
@@ -74,6 +79,11 @@ python -m pip install -r requirements-gru.txt
 python scripts/export_learned_logs.py
 python scripts/qlbs_gru_adversary.py
 ```
+
+The 5-seed QLBS mitigation MLP/GRU values used by the revised paper are recorded
+in `results/generated/qlbs_learned_adversary_full.csv`. The broader
+`results/generated/learned_adversary.csv` may be overwritten by quick smoke
+tests and should be treated according to `results/generated/run_metadata.json`.
 
 ## Configuration and outputs
 

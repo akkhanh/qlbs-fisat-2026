@@ -1,0 +1,7 @@
+variant,adversary,top1_mean,top1_ci95,cross_entropy_mean,seeds,source_log
+plain,MLP,0.394,0.013,1.601,5,logs/qlbs_plain.csv
+anchor_rho_030,MLP,0.324,0.011,1.626,5,logs/qlbs_anchor_030.csv
+rerandomization,MLP,0.243,0.006,1.726,5,logs/qlbs_rerand.csv
+plain,GRU,0.443,0.005,1.484,5,logs/qlbs_plain.csv
+anchor_rho_030,GRU,0.433,0.005,1.463,5,logs/qlbs_anchor_030.csv
+rerandomization,GRU,0.358,0.003,1.610,5,logs/qlbs_rerand.csv

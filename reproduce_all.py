@@ -16,6 +16,7 @@ def main(quick: bool):
         [sys.executable, "scripts/run_ngram_multiseed.py", *suffix],
         [sys.executable, "scripts/run_qlbs_variants.py", *suffix],
         [sys.executable, "scripts/run_mixing_time.py", *suffix],
+        [sys.executable, "scripts/run_generalization_matrix_search.py", *suffix],
         [sys.executable, "scripts/qlbs_learned_adversary.py", *suffix],
         [sys.executable, "scripts/generate_figures.py"],
     ]
@@ -26,6 +27,11 @@ def main(quick: bool):
         "mode": "quick_smoke_test" if quick else "full",
         "reportable_as_paper_results": not quick,
         "command": "python reproduce_all.py --quick" if quick else "python reproduce_all.py",
+        "notes": (
+            "Quick outputs are smoke-test only and must not be reported."
+            if quick
+            else "Full pipeline regenerates core benchmark, n-gram, variant, mixing, generalization, dependency-light MLP adversary, and figures. Optional GRU results require PyTorch and are stored separately when run."
+        ),
     }
     output = ROOT / "results" / "generated" / "run_metadata.json"
     output.write_text(json.dumps(metadata, indent=2) + "\n", encoding="utf-8")

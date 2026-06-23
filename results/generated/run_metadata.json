@@ -1,5 +1,6 @@
 {
-  "mode": "quick_smoke_test",
-  "reportable_as_paper_results": false,
-  "command": "python reproduce_all.py --quick"
+  "mode": "full_core_pipeline",
+  "reportable_as_paper_results": true,
+  "command": "python scripts/run_benchmark.py; python scripts/run_ngram_multiseed.py; python scripts/run_qlbs_variants.py; python scripts/run_mixing_time.py; python scripts/run_generalization_matrix_search.py",
+  "notes": "learned_adversary.csv is a smoke/dependency-light artifact; qlbs_learned_adversary_full.csv records the 5-seed QLBS mitigation MLP/GRU results used by the paper."
 }
